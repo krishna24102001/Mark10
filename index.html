@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cash Register</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="header">Cash Manager</h1>
+        <p class="description">
+            Enter the bill amount and amout payed, And, know the number of notes to be returned.
+        </p>
+        <label for="billamt">Bill Amount:</label>
+        <input id="billamt" type="text">
+        <label for="givencash">Amount Payed:</label>
+        <input class="givencash" type="text">
+        <button class="calculatevalue">Calculate the notes</button>
+
+        <table class="cashtable">
+            <caption>return change</caption>
+            <tr>
+                <th>No of notes</th>
+                <td></td>
+            </tr>
+            <tr>
+                <th>Note</th>
+                <td>2000</td>
+                <td>500</td>
+                <td>200</td>
+                <td>100</td>
+                <td>50</td>
+                <td>20</td>
+                <td>10</td>
+                <td>5</td>
+                <td>1</td>
+            </tr>
+        </table>
+    </div>
+
+    <script src="/index.js"></script>
+</body>
+</html>
