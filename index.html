@@ -1,45 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cash Register</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Cash-Register</title>
+    <link rel="stylesheet" href="/styles.css">
 </head>
-<body>
-    <div class="container">
-        <h1 class="header">Cash Manager</h1>
-        <p class="description">
-            Enter the bill amount and amout payed, And, know the number of notes to be returned.
-        </p>
-        <label for="billamt">Bill Amount:</label>
-        <input id="billamt" type="text">
-        <label for="givencash">Amount Payed:</label>
-        <input class="givencash" type="text">
-        <button class="calculatevalue">Calculate the notes</button>
 
-        <table class="cashtable">
-            <caption>return change</caption>
-            <tr>
-                <th>No of notes</th>
-                <td></td>
-            </tr>
-            <tr>
-                <th>Note</th>
-                <td>2000</td>
-                <td>500</td>
-                <td>200</td>
-                <td>100</td>
-                <td>50</td>
-                <td>20</td>
-                <td>10</td>
-                <td>5</td>
-                <td>1</td>
-            </tr>
-        </table>
+<body>
+    <header>
+        <h1>Cash Counter </h1>
+    </header>
+
+    <div class="InputSection">
+        <div class="input">
+            <input type="number" placeholder="Enter Bill Amount" class="bill-Amount">
+            <button id='next-btn'>next</button>
+        </div>
+        <div id="checkout" class="checkout">
+            <input type="number" placeholder="Enter cash" class="checkout-Amount">
+            <button id='checkout-btn'>checkout</button>
+        </div>
     </div>
 
-    <script src="/index.js"></script>
+    <section class="table" id="table">
+        <table>
+            <thead>
+                <tr>
+                    <th>Notes</th>
+                    <th style="padding-left: 100px;">No.of Notes</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="active-row">
+                    <td>2000</td>
+                    <td class="noOfNotes"></td>
+                </tr>
+                <tr>
+                    <td>500</td>
+                    <td class="noOfNotes"></td>
+                </tr>
+                <tr>
+                    <td>100</td>
+                    <td class="noOfNotes"></td>
+                </tr>
+                <tr>
+                    <td>20</td>
+                    <td class="noOfNotes"></td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td class="noOfNotes"></td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td class="noOfNotes"></td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td class="noOfNotes"></td>
+                </tr>
+            </tbody>
+            </tbody>
+        </table>
+
+    </section>
+    <footer>
+        <ul>
+            <li>
+                <a href="https://www.linkedin.com/in/krishna-gite-00b418234/" target="_blank">Linked in</a>
+            </li>
+            <li>
+                <a href="https://twitter.com/KrishnaRGite" target="_blank">Twitter</a>
+            </li>
+            <li>
+                <a href="https://github.com/krishna24102001" target="_blank">GitHub</a>
+            </li>
+            <li>
+                <a href="" target="_blank">Portfolio</a>
+            </li>
+        </ul>
+       
+    </footer>
+
+
 </body>
+<script src="/index.js"></script>
+
 </html>
